@@ -1,6 +1,6 @@
 <?php
 
-function isPalindrome($entry){ 
+function Palindrome_String($entry){ 
     if (strrev($entry) == $entry){ 
         return 1; 
     }
@@ -17,4 +17,18 @@ if(isPalindrome($shark)){
   else { 
 echo "No, not a palindrome."; 
   }
-?> 
+
+
+
+
+// Palindrome for integers.
+function Palindrome_Integers($input) {
+    $reverse = strrev($input);
+        if($reverse == $input) {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+}       

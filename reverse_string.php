@@ -1,12 +1,12 @@
 function reverse_string($string){
 
-  // store the variable
+  // Store the variable
   $reversed = '';
     
-  // count the length
+  // Count the length
   $i = 0; //counting length
     
-  // calculate the string length
+  // Calculate the string length
   while(isset($string[$i])){
       $i++;
   }
@@ -16,6 +16,6 @@ function reverse_string($string){
       $reversed .= $string[$j];
   }    
     
-  // returnin the reversed string
+  // return in the reversed string
     return $reversed;
 }

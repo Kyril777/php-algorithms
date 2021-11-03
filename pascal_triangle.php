@@ -1,5 +1,7 @@
 <?php
-// $level = ;
+// $level = 4;
+// $level = 5;
+
 $pascal = array(
     array(1),
 );

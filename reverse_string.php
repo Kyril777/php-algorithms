@@ -1,3 +1,4 @@
+<?php
 function reverse_string($string){
 
   // Store the variable
@@ -19,3 +20,5 @@ function reverse_string($string){
   // return in the reversed string
     return $reversed;
 }
+
+?>

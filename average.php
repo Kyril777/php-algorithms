@@ -1,7 +1,7 @@
 /* Mean. */
 
 <?php
-function average($entry)
+function average_mean($entry)
 {
    if (!is_array($entry)) return false;
 
@@ -10,7 +10,8 @@ function average($entry)
 ?>
 
 /* Median */
-<?php
-function getMedian($arr){
 
-}
+
+
+
+/* Mode */

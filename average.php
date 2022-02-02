@@ -8,3 +8,9 @@ function average($entry)
    return array_sum($entry)/count($entry);
 
 ?>
+
+/* Median */
+<?php
+function getMedian($arr){
+
+}

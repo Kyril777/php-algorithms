@@ -1,6 +1,6 @@
 <?php
 
-function fibonacci($n)
+function fibonacci1($n)
  {
  
   $first = 0;
@@ -22,3 +22,14 @@ function fibonacci($n)
     }
 }
   
+?>
+
+<?php
+function fibonacci2($n)
+{
+    if ($n <= 1) {
+        return $n;
+    } else {
+        return fibonacci2($n - 1) + fibonacci2($n - 2);
+    }
+}

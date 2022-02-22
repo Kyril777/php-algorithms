@@ -12,7 +12,6 @@ function anagram($string1, $string2) {
 
 ?>
 
-<?php
 
 <?php   
     function anagram_2($string1, $string2)

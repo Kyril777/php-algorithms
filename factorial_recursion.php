@@ -8,9 +8,7 @@ function factorial_recursive_one($num) {
         return ($num * factorial_recurisive_one($num-1));
     }
 }
-?>
 
-<?
 // Second example
 function factorial_recursive_two($num) {
    
@@ -23,4 +21,3 @@ function factorial_recursive_two($num) {
 
 echo factorial_recursive_two(5);
 
-?>

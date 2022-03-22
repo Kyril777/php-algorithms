@@ -1,17 +1,16 @@
-// 
 
-<?php
-function staircase($steps)
-{
-if ($steps <= 1)
-	return $steps;
-return staircase($steps - 1) +
-	staircase($steps - 2);
-}
-
-// Returns number of ways to reach n'th stair
-function countWays($steps)
-{
-    return staircase($steps + 1);
-}
-?>
+<?php 
+// Dind n'th stair using step size 1 or 2 or 3. 
+function numSteps($n) 
+{ 
+    if ($n == 1 || $n == 0)  
+        return 1; 
+    else if ($n == 2)  
+        return 2; 
+      
+    else
+        return numSteps($n - 3) +  
+               numSteps($n - 2) + 
+                numSteps($n - 1);  
+} 
+?> 

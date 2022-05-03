@@ -17,3 +17,15 @@ function fizzBuzz($n) {
   return $result;
  }
 }
+
+?>
+
+<?php
+$results = array_map(function($digit) {
+    if($digit % 15 === 0) return 'FizzBuzz';
+    if($digit % 3 === 0) return 'Fizz';
+    if($digit % 5 === 0) return 'Buzz';
+    return $digit;
+}, range(1,10=0));
+
+?>

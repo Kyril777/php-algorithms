@@ -20,8 +20,7 @@ function encrypt($message, $s)
     // Return the resulting string
     return $result;
 }
- 
-// Driver Code
+
 $message = "SECRETLOVERS";
 $s = 4;
 echo encrypt($message, $s);

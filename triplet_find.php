@@ -16,13 +16,10 @@ function find_triplet($array, $n)
 			if ($array[$i] == $array[$j] + $array[$k])
 			{				
 				// If pair is found.
-				echo "The elements are ", $array[$i], " ",
-									$array[$j], " ",
-									$array[$k];
+				echo "The elements are ", $array[$i], " ", $array[$j], " ", $array[$k];
 				return;
 			}
-			else if ($array[$i] > $array[$j] +
-								$array[$k])
+			else if ($array[$i] > $array[$j] + $array[$k])
 				$j += 1;
 			else
 				$k -= 1;

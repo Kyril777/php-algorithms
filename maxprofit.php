@@ -1,15 +1,15 @@
 <?php
 function maxProfit($prices) {
-  $count = count($prices);
-  if ($count < 2) {
+  $counter = count($prices);
+  if ($counter < 2) {
      return 0;
         }
 
-        $res = 0;
-        for ($i = 0; $i < $count - 1; $i++) {
-            for ($j = $i + 1; $j < $count; $j++) {
-                $res = max($res, $prices[$j] - $prices[$i]);
+        $result = 0;
+        for ($i = 0; $i < $counter - 1; $i++) {
+            for ($j = $i + 1; $j < $counter; $j++) {
+                $result = max($result, $prices[$j] - $prices[$i]);
             }
         }
-             return $res;
+             return $result;
     }

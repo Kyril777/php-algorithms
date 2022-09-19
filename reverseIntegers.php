@@ -25,7 +25,7 @@ echo reverse_int1(47102);
 // Reverse a group of numbers with a while loop.
 function reverse_int2($int)
 {
-    $reveral = 0;
+    $reversal = 0;
     while ($int > 0)
       {
         $reversal = $reversal * 10;

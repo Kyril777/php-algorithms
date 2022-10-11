@@ -36,3 +36,27 @@ function reverse_int2($int)
 }   
 
 echo reverse_int2(38956);
+
+?>
+
+<?php
+$revNum = 0;
+$base = 1;
+
+function reverse_int3($num){
+  global $revNum;
+  global $base;
+
+  if($num > 1){
+    reverse((int)$num/10);
+    $revNum += $num % 10 * $base;
+    $base *= 10;
+  }
+  return $num;
+}
+
+$x = ;
+echo "The reverse of $x is: ".reverse_int3($x);
+?>
+
+

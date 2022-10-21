@@ -22,3 +22,21 @@ function reverse_string($string){
 }
 
 ?>
+
+
+<?php
+function reverse_string($string) {
+  $l = 0;
+  $r = strlen($string) - 1;
+
+  while($r > $l){
+    // Swap characters at indices l and r
+    $c = $string[$l];
+    $string[$l] = $string[$r];
+    $string[$r] = $c;
+    
+    $l++;
+    $r--;
+  }
+  echo "$string \n";
+}

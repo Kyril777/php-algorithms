@@ -1,13 +1,19 @@
 <?php
-function primenumber($n)
-{
- for($x=2; $x<$n; $x++)
-   {
-      if($n %$x ==0)
-	      {
-		   return 0;
-		  }
+function primenumber($num) {
+  $n = 0;
+
+  for($i = 2; $i < ($num/2+1); $i++) {
+    if($num % $i == 0){
+      $n++;
+      break;
     }
-  return 1;
-   }
+  }
+
+  if ($n == 0){
+    echo $num." is a prime number.";
+  } else {
+    echo $num." is not a prime number.";
+  }
+}
+
 ?>

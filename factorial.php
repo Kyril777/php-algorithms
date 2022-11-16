@@ -30,3 +30,16 @@ function factorial($number){
     return $factorial;
 }
 ?>
+
+
+<?php
+// Factorial the iterative way
+function factorial($number){
+    if($number <= 1){
+        return 1;
+    }
+    else{
+        return $number * factorial($number - 1);
+    }
+}
+ 

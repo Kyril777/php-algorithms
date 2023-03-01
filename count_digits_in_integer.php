@@ -29,4 +29,10 @@ function countDigit($n)
     return $count;
 }
 
+// Uses the log function.
+function countDigitsLog($num){
+  return (int)log10(abs($MyNum)) + 1;
+}
+
+
 ?>

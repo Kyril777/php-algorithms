@@ -7,3 +7,13 @@ function split_name($fullName) {
     $first_name = trim( preg_replace('#'.preg_quote($last_name,'#').'#', '', $fullName ) );
     return array($first_name, $last_name);
 }
+
+/*
+split_name('Melvin Dougherty') will output:
+
+array(
+    0 => 'Melvin',
+    1 => 'Dougherty'
+);
+
+*/

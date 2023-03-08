@@ -17,6 +17,7 @@ array(
 
 */
 
+/* Function that splits a name into an array and taking middle names into account.*/
 function splits_names($fullName) {
     $arr = explode(' ', $fullName);
     $num = count($arr);
@@ -42,3 +43,4 @@ Array
     [middleName] => Michelle
     [lastName] => Gellar
 )
+*/

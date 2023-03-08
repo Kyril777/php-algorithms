@@ -1,4 +1,4 @@
-/* Function that splits a name into an array of $first_name and $last_name.*/
+/* Function that uses RegEx to split a name into an array of $first_name and $last_name.*/
 
 <?php
 function split_name($fullName) {
@@ -17,3 +17,29 @@ array(
 );
 
 */
+
+function split_name($fullName) {
+    $arr = explode(' ', $fullName);
+    $num = count($arr);
+    $firstName = $middleName = $lastName = null;
+    
+    if ($num == 2) {
+        list($firstName, $lastName) = $arr;
+    } else {
+        list($firstName, $middleName, $lastName) = $arr;
+    }
+
+    return (empty($firstName) || $num > 3) ? false : compact(
+        'firstName', 'middleName', 'lastName'
+    );
+}
+
+/*
+var_dump(split_name('Sarah Michelle Gellar')) will output:
+
+Array
+(
+    [firstName] => Sarah
+    [middleName] => Michelle
+    [lastName] => Gellar
+)

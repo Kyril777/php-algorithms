@@ -1,7 +1,6 @@
-/* Function that uses RegEx to split a name into an array of $first_name and $last_name.*/
-
 <?php
-function split_name($fullName) {
+/* Function that uses RegEx to split a name into an array of $first_name and $last_name.*/
+function splits_names($fullName) {
     $name = trim($fullName);
     $last_name = (strpos($fullName, ' ') === false) ? '' : preg_replace('#.*\s([\w-]*)$#', '$1', $fullName);
     $first_name = trim( preg_replace('#'.preg_quote($last_name,'#').'#', '', $fullName ) );
@@ -9,7 +8,7 @@ function split_name($fullName) {
 }
 
 /*
-split_name('Melvin Dougherty') will output:
+splits_names('Melvin Dougherty') will output:
 
 array(
     0 => 'Melvin',
@@ -18,7 +17,7 @@ array(
 
 */
 
-function split_name($fullName) {
+function splits_names($fullName) {
     $arr = explode(' ', $fullName);
     $num = count($arr);
     $firstName = $middleName = $lastName = null;
@@ -35,7 +34,7 @@ function split_name($fullName) {
 }
 
 /*
-var_dump(split_name('Sarah Michelle Gellar')) will output:
+var_dump(splits_names('Sarah Michelle Gellar')) will output:
 
 Array
 (

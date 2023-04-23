@@ -60,3 +60,29 @@ function Palindrome_Integers($input) {
         }
 }       
 ?>
+
+<?php
+// Another pallindrome for integers.
+function Palindrome_integers($integers){
+	$temp = $integers;
+	$new = 0;
+	while (floor($temp)) {
+		$x = $temp % 10;
+		$new = $new * 10 + $x;
+		$temp = $temp/10;
+	}
+	if ($new == $integers){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+// Application.
+$example = 1776;
+if (Palindrome_integers($example)){
+	echo "It's a palindrome!";
+} else {
+    echo "It's not a palindrome!";
+}

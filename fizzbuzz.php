@@ -29,3 +29,20 @@ $fizzBuzz2 = array_map(function($digit) {
 }, range(1,100));
 
 ?>
+
+<?php
+function fizzBuzz($digit){
+ if($digit == 0) {
+  return 0;
+ }
+ else if ($digit % 3 == 0){
+  return $digit % 5 ? 'fizzbuzz' : 'fizz';
+ }
+ else{
+  return $digit % 5 == 0 ? 'buzz' : $digit;
+ }
+}
+
+for ($i = 1; $i < 50; $i ++){
+ echo fizzBuzz($i)."\n";
+}

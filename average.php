@@ -1,24 +1,13 @@
 <?php
-/* Mean. */
-function average_mean($entry)
-{
-   if (!is_array($entry)) return false;
+/* Find the mean average. */
+function averageMean($entry){ 
+   if(is_array($entry)){ 
+      $mean = array_sum($entry)  / count($entry);  
+      return $mean; 
+      }     
+   }
+ 
+$array = array(95, 90, 88, 83, 82, 82, 80, 77, 76, 76, 73); 
+ 
+echo 'Mean: '.averageMean($array); // 82
 
-   return array_sum($entry)/count($entry);
-
-
-/* Median */
-
-
-
-
-/* Mode */
-function average_mode($arr) {
-  $count = array();
-  foreach ((array)$arr as $val) {
-    if (!isset($count[$val])) { $count[$val] = 0; }
-    $count[$val]++;
-  }
-  arsort($count);
-  return key($count);
-}

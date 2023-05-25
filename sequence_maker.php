@@ -19,8 +19,8 @@ $d = data()["d"];
 $e = data()["e"];
 $f = data()["f"];
 
-echo $d . $c . $c . $e .PHP_EOL;
-echo $b . $f . $a . $a .PHP_EOL;
-echo $f . $d . $f . $e .PHP_EOL;
+echo $d . $c . $c . $e . PHP_EOL; // 987789789654
+echo $b . $f . $a . $a . PHP_EOL; // 456321123123
+echo $f . $d . $f . $e . PHP_EOL; // 321987321654
 
 ?>

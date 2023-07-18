@@ -17,5 +17,7 @@ function produceValues($array) {
             $count++;
         }
     }
+    // Return the array's total count and values.
+    return array('total' => $count, 'values' => $items);    
 }
  
